@@ -1,0 +1,95 @@
+/* src/pages/Home.module.css */
+.container {
+  background-color: #000;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.title {
+  font-size: 2rem;
+}
+
+.buttons {
+  display: flex;
+}
+
+.signInButton {
+  background-color: #f00;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  margin-right: 0.5rem;
+}
+
+.registerButton {
+  background-color: transparent;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: 1px solid #fff;
+  border-radius: 0.25rem;
+}
+
+.main {
+  padding: 2rem;
+}
+
+.sectionTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.movieGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+
+.movie {
+  position: relative;
+  overflow: hidden;
+  border-radius: 0.5rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+}
+
+.movieImage {
+  width: 100%;
+  height: 250px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.movie:hover .movieImage {
+  transform: scale(1.05);
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.movie:hover .overlay {
+  opacity: 1;
+}
+
+.watchButton {
+  background-color: #f00;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  font-weight: bold;
+}
