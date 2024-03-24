@@ -67,7 +67,7 @@ const movies = [
   { id: 3, title: 'Harry Potter And The Prisoner of Azkaban', poster: 'movie3.jpg', videoSrc: 'https://player.vimeo.com/video/926513595?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479' },
   { id: 4, title: 'Harry Potter And The Goblet of Fire', poster: 'movie4.jpg', videoSrc: 'https://player.vimeo.com/video/926513595?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479' },
   { id: 5, title: 'Harry Potter And The Order of Phoenix', poster: 'movie5.jpg', videoSrc: 'https://player.vimeo.com/video/926513595?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479' },
-  { id: 6, title: 'Harry Potter And The Half Blood Prince', poster: 'movie6.jpg', videoSrc: 'https://player.vimeo.com/video/926607002?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479' },
+  { id: 6, title: 'Harry Potter And The Half Blood Prince', poster: '6.jpg', videoSrc: 'https://player.vimeo.com/video/926607002?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479' },
   { id: 7, title: 'Harry Potter And The Deathly Hollows', poster: 'movie7.jpg', videoSrc: 'https://player.vimeo.com/video/926513595?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479' },
   { id: 8, title: 'Harry Potter And The Battle of Hohgwarts', poster: 'movie8.jpg', videoSrc: 'https://player.vimeo.com/video/926513595?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479' },
 //   { id: 8, title: 'Harry Potter And The Battle of Hohgwarts - Part 2', poster: 'movie8.jpg', videoSrc: 'https://player.vimeo.com/video/926513595?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479' },
@@ -85,12 +85,12 @@ const Home = () => {
         </div>
       </header>
       <main className={styles.main}>
-        <h2 className={styles.sectionTitle}>Featured Movies</h2>
+        <h2 className={styles.sectionTitle}>Harry Potter Complete Series</h2>
         <div className={styles.movieGrid}>
           {movies.map((movie) => (
             <div key={movie.id} className={styles.movie}>
               <img
-                src="./movie1.jpg"
+                src={movie.poster}
                 alt={movie.title}
                 className={styles.movieImage}
               />
